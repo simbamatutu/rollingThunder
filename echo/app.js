@@ -1,15 +1,15 @@
-var username = document.getElementById('Inputuser');
-var email = document.getElementById('InputEmail');
-var password = document.getElementById('InputPassword');
-var btn = document.querySelector('.btn');
 
-
+var btn = document.getElementById("btn");
+var getItem = document.getElementById("inputText");
+var res1 = document.querySelectorAll(".item");
 
 btn.addEventListener('click', function (e) {
 
   e.preventDefault();
-  console.log(username.value);
-  console.log(email.value);
-  console.log(password.value);
+  var i = 0;
+  while(i<res1.length){
+    res1[i].innerText = getItem.value;
+    i++;
+  }
 
 });
