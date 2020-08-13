@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    scroll-behavior: smooth;
     
 }
 body{
@@ -19,6 +19,14 @@ nav{
     color: white;
     padding: 2rem;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    z-index: 2;
+    box-shadow: 1px 1px black;
+   
 }
  
 
@@ -44,22 +52,20 @@ nav ul li a {
 }
 
 .conquerPic{
-    background-image: url(/img/bg-1.jpg);
-    background-position: bottom;
-    background-size: 100%;
-    width: 100%;
-    height: 40rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
+    position: relative; 
    
-    
-    
-}
-
-#conquerPicText{
+} 
+#bg-1{
      
-     text-align: center;
+    width: 100%;
+    max-height: 40rem;
+}
+#conquerPicText{
+    position: absolute;
+    text-align: center;
     color: whitesmoke;  
 }
 
@@ -67,7 +73,7 @@ nav ul li a {
     font-family: 'Merriweather', serif;
     text-shadow: 2px 3px #000;
     font-weight: bold;
-
+    font-size: 6rem;
     letter-spacing: 13px;
     padding-bottom: 13px;
     color: whitesmoke;  
@@ -77,4 +83,154 @@ nav ul li a {
     text-shadow: 1px 1px #000;
     letter-spacing: 3px;
     color: whitesmoke;  
+}
+
+main{
+  
+    background-color: teal;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 2rem;
+    height: 1060px;
+}
+
+/*.aboutUs{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:10px;
+}
+
+#aboutUsTop{
+    background-color: violet;
+}
+
+#aboutUsBottom{
+    background-color: #7f8fa6;
+}*/
+
+#topAboutUs{
+
+    background-color: #7f8fa6;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 30px;
+    font-family: 'Cabin', sans-serif;
+}
+#topAboutUs h3{
+    padding: 1rem;
+    font-size: 1.4rem;
+
+}
+
+#topAboutUs input{
+    padding: 0.7rem;
+    border: none;
+    border-radius: 3%;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+    margin-left: 30%;
+    margin-bottom: 1rem;
+
+}
+
+#topAboutUs p{
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0rem 1rem 1rem 1rem;
+
+}
+#bootstrap{
+    background-color: whitesmoke;
+    border-radius: 1%;
+}
+
+#bootstrap div{
+    display: flexbox;
+}
+
+#bootstrap input{
+    background: green;
+}
+
+#bootstrap-img{
+    min-width: 100%;
+    background-position: center;
+    
+}
+
+#bootstrap h3{
+    color: green;
+}
+
+
+
+#responsive{
+    background-color: whitesmoke;
+}
+
+#responsive h3{
+    color: #5dbcd2;
+}
+
+#responsive input{
+    background: #5dbcd2;
+}
+
+
+#parrallox{
+    background-color: whitesmoke;
+}
+
+#parrallox input{
+    background: rgb(158, 40, 40);
+}
+
+#parrallox h3{
+    color: rgb(158, 40, 40);
+}
+
+#bottomAboutUs{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2rem;
+    padding-top: 2rem;
+    
+    color: #636060;
+    font-family: 'Cabin', sans-serif;
+}
+
+#leftSide{
+    background-color: whitesmoke; 
+}
+#leftSide img{
+    width: 100%;
+}
+#leftSide h3{
+    padding: 1rem;
+}
+
+#leftSide p{
+    padding: 1rem;
+    justify-self: center;
+    text-align: justify;
+}
+
+#rightSide{
+    background-color: whitesmoke; 
+    padding-right: 2rem;
+}
+#rightSide img{
+    width: 100%;
+}
+#rightSide h3{
+    padding: 1rem;
+}
+
+#rightSide p{
+    padding: 1rem;
+    justify-self: center;
+    text-align: justify;
 }
