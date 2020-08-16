@@ -79,7 +79,7 @@ main {
   margin-left: 15%;
   margin-right: 15%;
   padding: 2rem;
-  height: 1490px;
+  height: 1390px;
   
 }
 
@@ -378,8 +378,8 @@ main {
 
 #contactContain .info input{
   padding: 1rem;
-  
-  background-color: rgba(255, 255, 255, 0.233);
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.521);
   font-family: "Noto Sans JP", sans-serif;
   border-radius: 10px;
   display: block;
@@ -387,14 +387,7 @@ main {
   
 }
 
-#contactContain .info input[type= "text"]{
-  color: rgb(66, 11, 11);
-  
-}
-
-#contactContain .info input[type= "email"]{
-  color: rgb(240, 240, 240);
-}
+ 
 #contactContain .info textarea{
   display: block;
   background-color: rgba(255, 255, 255, 0.233);
@@ -405,4 +398,23 @@ main {
   top:5%;
   text-align:start ;
   padding: 0.7em;
+}
+
+footer{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div{
+  text-align: center;
+}
+
+hr{
+ 
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid rgb(143, 140, 140);
+  width: 100%;
 }
