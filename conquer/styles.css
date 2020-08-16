@@ -79,7 +79,8 @@ main {
   margin-left: 15%;
   margin-right: 15%;
   padding: 2rem;
-  height: 1060px;
+  height: 1490px;
+  
 }
 
 #topAboutUs {
@@ -218,7 +219,7 @@ main {
 }
 
 #midImg {
-  padding-top: 5rem;
+ 
   width: 100%;
   display: flex;
   align-items: center;
@@ -249,4 +250,159 @@ main {
   padding: 0.5vh;
   text-shadow: 1px 1px black;
   font-weight: 200;
+}
+
+.bottomContainer{
+  height: 100vh;
+  display: grid;
+  grid-gap: 3.2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: 
+  "column1 column2 column3 column4"
+  "bigRowcolumn bigRowcolumn bigRowcolumn bigRowcolumn";
+  color: grey;
+  font-family: "Cabin", sans-serif;
+
+}
+
+.bottomContainer img{
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.bottomContainer input{
+  font-size: large;
+  color: grey;
+  align-self: center;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  padding: 1rem;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.bottomContainer h3{
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  font-weight: 700;
+}
+
+.bottomContainer p{
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  font-weight: 500;
+}
+
+#column1{
+  background-color: #f2f2f2;
+  grid-area: column1;
+   
+}
+
+#column2{
+   
+  grid-area: column2;
+  background-color: #f2f2f2;
+  
+}
+
+#column3{
+   
+  grid-area: column3;
+  background-color: #f2f2f2;
+  
+}
+
+#column4{
+  background-color: #f2f2f2;
+  grid-area: column4;
+  
+}
+#bigRowColumn{
+  background-color: #f2f2f2;
+  grid-area: bigRowcolumn;
+  
+}
+
+.contact img{
+  max-height: 40rem;
+  width: 100%;
+}
+
+.contact{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+}
+.contact h3{
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 800;
+  font-size: 2.8em;
+  text-shadow: 2px 3px black;
+  text-align: center;
+  padding: 0.9rem;
+
+}
+.para{
+ 
+  font-size: larger;
+ 
+  
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.233);
+}
+
+#contactContain{
+  position: absolute;
+  color: black;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  width: 30%;
+}
+
+#contactContain .info{
+  padding: 1rem;
+  position: relative;
+  
+  font-size: larger;
+  font-weight: 400;
+  
+}
+
+#contactContain .info input{
+  padding: 1rem;
+  
+  background-color: rgba(255, 255, 255, 0.233);
+  font-family: "Noto Sans JP", sans-serif;
+  border-radius: 10px;
+  display: block;
+  margin:2%;
+  
+}
+
+#contactContain .info input[type= "text"]{
+  color: rgb(66, 11, 11);
+  
+}
+
+#contactContain .info input[type= "email"]{
+  color: rgb(240, 240, 240);
+}
+#contactContain .info textarea{
+  display: block;
+  background-color: rgba(255, 255, 255, 0.233);
+  border-radius: 10px;
+  margin:2%;
+  position: absolute;
+  left: 50%;
+  top:5%;
+  text-align:start ;
+  padding: 0.7em;
 }
