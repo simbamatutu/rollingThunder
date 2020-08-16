@@ -158,6 +158,12 @@ main {
   color: rgb(158, 40, 40);
 }
 
+.top{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
 #bottomAboutUs {
   display: grid;
   grid-template-columns: 50% 50%;
