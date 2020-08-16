@@ -125,7 +125,7 @@ main {
 }
 
 #bootstrap-img {
-  max-width: 100%;
+  width: 100%;
   background-position: center;
 }
 
@@ -187,7 +187,7 @@ main {
   background-color: #f2f2f2;
 }
 #rightSide img {
-  max-width: 100%;
+  width: 100%;
   background-position: center;
 }
 #rightSide h3 {
@@ -218,9 +218,8 @@ main {
 }
 
 #midImg {
-  padding-top: 2rem;
+  padding-top: 5rem;
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
