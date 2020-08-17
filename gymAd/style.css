@@ -1,0 +1,113 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav h2 {
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+nav img {
+  width: 24px;
+  height: 24px;
+  z-index: 100;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 3s;
+}
+
+video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: overlay;
+  background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+}
+
+.text {
+  position: absolute;
+  z-index: 100;
+  color: azure;
+  z-index: 100;
+  top: 10%;
+  padding: 8rem;
+}
+
+.text h2 {
+  font-weight: 800;
+  font-size: 4em;
+  text-shadow: 1px 2px black;
+}
+
+.text h3 {
+  font-weight: 600;
+  font-size: 2em;
+  text-shadow: 1px 2px black;
+  padding-bottom: 0.2em;
+}
+
+.text p {
+  font-weight: 200;
+  font-size: 1em;
+  text-shadow: 1px 2px black;
+  width: 60%;
+}
+section {
+  position: absolute;
+  z-index: 100;
+  color: azure;
+  z-index: 100;
+  top: 60%;
+  padding-top: 2em;
+  padding-left: 8em;
+}
+
+section h3 {
+  padding: 0.8em;
+  color: #ffffff;
+  background-color: #000;
+}
+
+section img {
+  padding: 0.2em;
+  padding-top: 0.8em;
+}
+
+@media (max-width: 950px) {
+  .text {
+    padding: 3rem;
+  }
+
+  section {
+    padding-left: 3rem;
+    top: 50%;
+  }
+}
+
+@media (min-width: 360px) {
+  section {
+    top: 25rem;
+  }
+}
