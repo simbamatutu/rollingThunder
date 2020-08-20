@@ -9,5 +9,5 @@ closeOne.addEventListener('click', function(){
 
 toggleMenu.addEventListener('click', function(){
     menu.classList.toggle("menuActive");
-    menu.style.zIndex='10';
+    menu.style.zIndex='20';
 });
