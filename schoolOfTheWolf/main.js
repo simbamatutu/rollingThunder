@@ -29,6 +29,7 @@ gearList.addEventListener('click' , function(){
     menu.style.zIndex='0';
 });
 
+
 alumniList.addEventListener('click' , function(){
     menu.classList.toggle("menuActive");
     menu.style.zIndex='0';
