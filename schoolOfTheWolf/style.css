@@ -12,9 +12,10 @@ video {
   height: 100%;
   left: 0;
   top: 0;
-
+    display: block;
   object-fit: cover;
 }
+
 
 header .logo {
   display: flex;
@@ -46,6 +47,18 @@ header ul li a {
   font-size: 1.2em;
 }
 
+header ul li a:hover {
+    text-decoration: none;
+    padding-left: 3.3rem;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+    z-index: 100;
+     
+    font-weight: 300;
+   
+    font-size: 1.2em;
+  }
+  
 header ul {
   padding: 30px;
   list-style: none;
@@ -58,10 +71,11 @@ header ul li {
 .banner {
   position: absolute;
   top: 0;
+  display: block;
   left: 0;
   z-index: 2;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -155,13 +169,13 @@ header {
 .maintext h2{
     font-size: 5rem;
    padding-bottom:0;
-    text-shadow: 2px 2px red;
+    text-shadow: 2px 1px red;
 }
 
 .maintext h3{
     font-size: 2rem;
    padding-top:0 ;
-    text-shadow: 2px 2px red;
+   text-shadow: 1px 1px rgb(100, 3, 3);
 }
 
 .maintext .text p{
@@ -171,15 +185,24 @@ header {
     padding-bottom: 30px;
 }
 
+
+
 .maintext a{
     margin-top: 10px;
     text-decoration: none;
-    padding: 10px 25px ;
+    padding: 8px 20px ;
     color: white;
     border: solid 1px red;
     background-color: red;
     
     
+}
+
+.maintext a:hover{
+    color: rgb(255, 255, 255);
+    padding: 10px 25px ;
+    border: solid 1px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
 }
 
 @keyframes medallionAnimation{
@@ -205,9 +228,9 @@ header {
   }
 }
 
-@media (max-width: 406px) {
+@media screen and (max-width: 414px) {
   header .logo img {
-    height: 30px;
+    height: 40px;
   }
 
   header .logo h2 {
@@ -218,4 +241,83 @@ header {
     font-weight: 200;
     font-size: 0.9em;
   }
+
+  .maintext{
+    z-index: 13;
+    position: absolute;
+    transform: translateY(10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px 30px;
+}
+
+.maintext h2{
+    font-size: 3rem;
+   padding-bottom:0;
+    text-shadow: 1px 2px red;
+}
+
+.maintext h3{
+    font-size: 1rem;
+   padding-top:0 ;
+   text-shadow: 1px 2px red;
+    
+}
+
+.maintext .text p{
+    
+    width: 60vw;
+    padding-top: 0.3em;
+    padding-bottom: 30px;
+}
+
+
+@media screen and (max-width: 360px) {
+    header .logo img {
+      height: 40px;
+    }
+  
+    header .logo h2 {
+      padding-left: 1em;
+      text-transform: capitalize;
+      text-shadow: 1px 2px #000;
+      line-height: 0.2em;
+      font-weight: 200;
+      font-size: 0.8em;
+    }
+  
+    .maintext{
+      z-index: 13;
+      position: absolute;
+      transform: translateY(7%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 8px 20px;
+  }
+  
+  .maintext h2{
+      font-size: 1.2rem;
+     padding-bottom:0;
+      text-shadow: 1px 2px red;
+  }
+  
+  .maintext h3{
+      font-size: 0.9rem;
+     padding-top:0 ;
+     text-shadow: 1px 1px rgb(179, 4, 4);
+      
+  }
+  
+  .maintext .text p{
+      font-size: 0.8rem ;
+      width: 60vw;
+      padding-top: 0.3em;
+      padding-bottom: 30px;
+  }
+}
+
 }
