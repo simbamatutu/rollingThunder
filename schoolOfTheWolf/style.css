@@ -239,25 +239,12 @@ header {
     font-size: 0.8em;
   }
 
-  .toggle{
-    top: 0;
-    right: 0;
-    position: absolute;
-    padding: 10px 10px;
-    margin: 10px;
-    height: 40px;
-    margin-top: 27px;
-  }
 
 
   .toggle img {
     top: 0;
     right: 0;
-    position: absolute;
-    padding: 10px 10px;
-    margin: 10px;
-    height: 40px;
-    margin-top: 27px;
+    position: absolute;    
   }
    
   .maintext{
