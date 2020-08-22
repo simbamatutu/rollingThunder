@@ -229,20 +229,14 @@ header {
 
 @media screen and (max-width: 414px) {
   header .logo img {
-    height:40px;
+    height: 30px;
   }
-  
-  .logo{
-    margin-right: auto;
-    padding-right: 1px;
-}
+
   header .logo h2 {
     padding-left: 1em;
     text-transform: capitalize;
-    font-weight: 200;
-    font-size: 1em;
-    margin-right: -10px;
-    padding-right: -10px;
+    font-weight: 100;
+    font-size: 0.8em;
     text-shadow: 1px 1px black;
   }
 
@@ -258,7 +252,7 @@ header {
   .maintext{
     z-index: 13;
     position: absolute;
-    transform: translateY(30%);
+    transform: translateY(40%);
     display: flex;
     justify-content: center;
     align-items: center;
