@@ -25,9 +25,7 @@ header .logo {
 }
 header .logo img {
   height: 80px;
-  animation: medallionAnimation 10s ease-in-out;
-  animation-delay: 100s;
-  animation-iteration-count: infinite;
+ 
 }
 
 header h2 {
