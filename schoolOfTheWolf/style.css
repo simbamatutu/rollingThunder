@@ -234,14 +234,15 @@ header {
   
   .logo{
     margin-right: auto;
-    padding-right: auto;
+    padding-right: 1px;
 }
   header .logo h2 {
     padding-left: 1em;
     text-transform: capitalize;
     font-weight: 200;
     font-size: 1em;
-    margin-right: 60px;
+    margin-right: -10px;
+    padding-right: -10px;
     text-shadow: 1px 1px black;
   }
 
