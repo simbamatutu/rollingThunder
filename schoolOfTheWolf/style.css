@@ -244,13 +244,14 @@ header {
   .toggle img {
     top: 0;
     right: 0;
-    position: absolute;    
+    position: absolute;   
+    
   }
    
   .maintext{
     z-index: 13;
     position: absolute;
-    transform: translateY(10%);
+    transform: translateY(30%);
     display: flex;
     justify-content: center;
     align-items: center;
