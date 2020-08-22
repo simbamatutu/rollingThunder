@@ -231,16 +231,14 @@ header {
 
 @media screen and (max-width: 414px) {
   header .logo img {
-    height: 40px;
+    height: 30px;
   }
 
   header .logo h2 {
     padding-left: 1em;
     text-transform: capitalize;
-    text-shadow: 1px 2px #000;
-    line-height: 0.2em;
-    font-weight: 200;
-    font-size: 0.9em;
+    font-weight: 100;
+    font-size: 0.8em;
   }
 
   .maintext{
@@ -277,14 +275,14 @@ header {
 
 @media screen and (max-width: 360px) {
     header .logo img {
-      height: 40px;
+      height: 30px;
     }
   
     header .logo h2 {
-      padding-left: 1em;
+     
       text-transform: capitalize;
-      text-shadow: 1px 2px #000;
-      line-height: 0.2em;
+     
+      
       font-weight: 200;
       font-size: 0.8em;
     }
