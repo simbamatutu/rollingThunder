@@ -12,7 +12,7 @@ video {
   height: 100%;
   left: 0;
   top: 0;
-    display: block;
+  z-index: 20;
   object-fit: cover;
 }
 
@@ -25,9 +25,7 @@ header .logo {
 }
 header .logo img {
   height: 80px;
-  animation: medallionAnimation 10s ease-in-out;
-  animation-delay: 100s;
-  animation-iteration-count: infinite;
+ 
 }
 
 header h2 {
@@ -231,22 +229,30 @@ header {
 
 @media screen and (max-width: 414px) {
   header .logo img {
-    height: 40px;
+    height: 30px;
   }
 
   header .logo h2 {
     padding-left: 1em;
     text-transform: capitalize;
-    text-shadow: 1px 2px #000;
-    line-height: 0.2em;
-    font-weight: 200;
-    font-size: 0.9em;
+    font-weight: 100;
+    font-size: 0.8em;
+    text-shadow: 1px 1px black;
   }
 
+
+
+  .toggle img {
+    top: 0;
+    right: 0;
+    position: absolute;   
+    
+  }
+   
   .maintext{
     z-index: 13;
     position: absolute;
-    transform: translateY(10%);
+    transform: translateY(40%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,15 +261,15 @@ header {
 }
 
 .maintext h2{
-    font-size: 3rem;
+    font-size: 1.1rem;
    padding-bottom:0;
-    text-shadow: 1px 2px red;
+    text-shadow: 1px 1px red;
 }
 
 .maintext h3{
     font-size: 1rem;
    padding-top:0 ;
-   text-shadow: 1px 2px red;
+   text-shadow: 1px 1px red;
     
 }
 
@@ -277,14 +283,14 @@ header {
 
 @media screen and (max-width: 360px) {
     header .logo img {
-      height: 40px;
+      height: 30px;
     }
   
     header .logo h2 {
-      padding-left: 1em;
+     
       text-transform: capitalize;
-      text-shadow: 1px 2px #000;
-      line-height: 0.2em;
+     
+      
       font-weight: 200;
       font-size: 0.8em;
     }
