@@ -25,6 +25,7 @@ h2 {
 #planText{
     font-size: 2.6rem;
 }
+
 body {
   display: flex;
   flex-direction: column;
