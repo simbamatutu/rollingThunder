@@ -24,12 +24,13 @@ function greetings() {
   let today = new Date(),
     hours = today.getHours();
 
-  if (hours >= 0 && hours < 12) {
+
+  if (hours < 12) {
     greeting.textContent = 'Good Morning';
     document.body.style.backgroundImage = "url('./img/morning.jpg')";
     document.body.style.backgroundPosition = "center";
     document.body.style.color = "whitesmoke";
-  } else if (hours >= 12 && hours < 18) {
+  } else if (hours < 18) {
     greeting.textContent = 'Good Afternoon';
   } else {
     greeting.textContent = 'Good Evening';
