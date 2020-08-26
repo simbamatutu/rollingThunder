@@ -38,8 +38,8 @@ function greetings() {
   } else {
     greeting.textContent = 'Good Evening';
     document.body.style.backgroundImage = "url('./img/night.jpg')";
-    document.body.style.objectFit = "cover";
-    document.body.style.backgroundPosition = "centre";
+
+    document.body.style.backgroundSize = "cover";
     document.body.style.color = "white";
   }
 
