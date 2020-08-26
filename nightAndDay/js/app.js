@@ -3,6 +3,8 @@ var time = document.getElementById('time'),
   name = document.getElementById('name'),
   plan = document.getElementById('theplan');
 
+console.log(new Date());
+
 function setTime() {
   let today = new Date(),
     hours = today.getHours(),
@@ -26,6 +28,7 @@ function greetings() {
     greeting.textContent = 'Good Morning';
     document.body.style.backgroundImage = "url('./img/morning.jpg')";
     document.body.style.backgroundPosition = "center";
+    document.body.style.color = "whitesmoke";
   } else if (hours >= 12 && hours < 18) {
     greeting.textContent = 'Good Afternoon';
   } else {
