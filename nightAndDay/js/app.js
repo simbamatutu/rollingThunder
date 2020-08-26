@@ -36,6 +36,7 @@ function greetings() {
 function setBg(){
     let today = new Date(),
     hours = today.getHours();
+    
     if(hours < 5){
         document.body.style.backgroundImage = "url('./img/night2.jpg')";
         document.body.style.color="white";
