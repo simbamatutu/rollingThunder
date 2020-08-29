@@ -24,6 +24,7 @@ h2 {
 
 #planText{
     font-size: 2.6rem;
+   
 }
 
 body {
@@ -35,5 +36,6 @@ body {
   text-justify: center;
   background-position: center;
   font-family: "Varela Round", sans-serif;
+  background-size: cover;
 }
  

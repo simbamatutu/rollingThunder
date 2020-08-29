@@ -36,27 +36,29 @@ function greetings() {
 function setBg(){
     let today = new Date(),
     hours = today.getHours();
-    
+   hours=13;
     if(hours < 5){
-        document.body.style.backgroundImage = "url('./img/night2.jpg')";
+       document.body.style.backgroundImage = "url('./img/night2.jpg')";
         document.body.style.color="white";
+        document.body.style
     }else if(hours>= 6 && hours <= 11){
         document.body.style.backgroundImage = "url('./img/sunrise.jpg')";
         document.body.style.color="white"; 
     }else if((hours>= 12 && hours <= 17) ){
         document.body.style.backgroundImage = "url('./img/day.jpg')";
-        document.body.style.color="white"; 
+        document.body.style.color="#fff"; 
     }else if(hours == 18){
         document.body.style.backgroundImage = "url('./img/sunset.jpg')"; 
         document.body.style.color="white";
     }else{
-        document.body.style.backgroundImage = "url('./img/night1.jpg')"; 
+       document.body.style.backgroundImage = "url('./img/night1.jpg')"; 
+        document.body.style.color="white";
     }
 }
 function getName(){
 
     if(localStorage.getItem('name') === null){
-        name.textContent ='Enter name..';
+        name.textContent ='{Enter name...}';
     }else{
         name.textContent= localStorage.getItem('name');
     }
@@ -77,7 +79,7 @@ name.addEventListener('keypress', setName);
 
 function getPlan(){
     if(localStorage.getItem('plan') === null){
-        name.textContent ='Enter the plan..';
+        name.textContent ='{Enter the plan...}';
     }else{
         plan.textContent= localStorage.getItem('plan');
     }
