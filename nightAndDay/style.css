@@ -37,3 +37,26 @@ body {
   font-family: "Varela Round", sans-serif;
   background-size: cover;
 }
+
+@media (max-width:550px){
+    time {
+        font-size: 3.3rem;
+        padding-bottom: 1rem;
+        font-family: "Orbitron", sans-serif;
+      }
+
+      h1 {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      #planText{
+        font-size: 1.3rem;
+       
+    }
+
+      h2 {
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+       
+      }
+}
