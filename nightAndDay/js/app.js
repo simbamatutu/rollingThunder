@@ -79,7 +79,7 @@ name.addEventListener('keypress', setName);
 
 function getPlan(){
     if(localStorage.getItem('plan') === null){
-        name.textContent ='{Enter your focus...}';
+        plan.textContent ='{Enter your focus...}';
     }else{
         plan.textContent= localStorage.getItem('plan');
     }
