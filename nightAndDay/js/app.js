@@ -36,7 +36,7 @@ function greetings() {
 function setBg(){
     let today = new Date(),
     hours = today.getHours();
-   hours=13;
+
     if(hours < 5){
        document.body.style.backgroundImage = "url('./img/night2.jpg')";
         document.body.style.color="white";
@@ -79,7 +79,7 @@ name.addEventListener('keypress', setName);
 
 function getPlan(){
     if(localStorage.getItem('plan') === null){
-        name.textContent ='{Enter the plan...}';
+        plan.textContent =;
     }else{
         plan.textContent= localStorage.getItem('plan');
     }
