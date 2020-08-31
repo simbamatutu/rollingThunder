@@ -30,7 +30,7 @@ function greetings() {
     } else {
         greeting.textContent = 'Good Evening';
     }
-    setTimeout(setTime, 1000);
+    setTimeout(greetings, 1000);
 }
 
 function setBg() {
@@ -55,7 +55,7 @@ function setBg() {
         document.body.style.color = "white";
     }
 
-    setTimeout(setTime, 1000);
+    setTimeout(setBg, 1000);
 }
 function getName() {
 
