@@ -1,3 +1,4 @@
+ 
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 * {
   box-sizing: border-box;
@@ -38,6 +39,7 @@ body {
   background-size: cover;
 }
 
+
 @media (max-width:550px){
     time {
         font-size: 3.3rem;
@@ -63,3 +65,4 @@ body {
 
     
 }
+

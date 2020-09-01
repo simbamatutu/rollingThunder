@@ -35,11 +35,13 @@ function greetings() {
 
 function setBg() {
     let today = new Date(),
+
         hours = today.getHours();
 
     if (hours < 5) {
         document.body.style.backgroundImage = "url('./img/night2.jpg')";
         document.body.style.color = "white";
+
         document.body.style
     } else if (hours >= 6 && hours <= 11) {
         document.body.style.backgroundImage = "url('./img/sunrise.jpg')";
@@ -79,11 +81,13 @@ function setName(e) {
 name.addEventListener('keypress', setName);
 
 
+
 function getPlan() {
     if (localStorage.getItem('plan') === null) {
         plan.textContent = '{Enter your focus...}';
     } else {
         plan.textContent = localStorage.getItem('plan');
+
     }
 }
 
