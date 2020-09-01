@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< Updated upstream
  
  
 
@@ -11,3 +12,17 @@ function App() {
 }
 
 export default App;
+=======
+
+class Todo extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Todo</h1>
+      </div>
+    );
+  }
+}
+
+export default Todo;
+>>>>>>> Stashed changes
