@@ -79,7 +79,7 @@ function setName(e) {
     }
 }
 name.addEventListener('keypress', setName);
-
+name.addEventListener('blur', setName);
 
 
 function getPlan() {
@@ -102,7 +102,7 @@ function setPlan(e) {
     }
 }
 plan.addEventListener('keypress', setPlan);
-
+plan.addEventListener('blur', setPlan);
 greetings();
 getName();
 getPlan();
