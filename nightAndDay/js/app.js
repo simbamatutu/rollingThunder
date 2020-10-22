@@ -40,7 +40,7 @@ function setBg() {
     if (hours < 5) {
         document.body.style.backgroundImage = "url('./img/night2.jpg')";
         document.body.style.color = "white";
-        document.body.style
+
     } else if (hours >= 6 && hours <= 11) {
         document.body.style.backgroundImage = "url('./img/sunrise.jpg')";
         document.body.style.color = "white";
