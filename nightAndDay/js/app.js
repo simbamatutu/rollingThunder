@@ -35,12 +35,17 @@ function greetings() {
 
 function setBg() {
     let today = new Date(),
+
         hours = today.getHours();
 
     if (hours < 5) {
         document.body.style.backgroundImage = "url('./img/night2.jpg')";
         document.body.style.color = "white";
 
+<<<<<<< HEAD
+=======
+        document.body.style
+>>>>>>> 51d40ddbeb777d2a8fba3e2b10f5b800601be037
     } else if (hours >= 6 && hours <= 11) {
         document.body.style.backgroundImage = "url('./img/sunrise.jpg')";
         document.body.style.color = "white";
@@ -77,6 +82,7 @@ function setName(e) {
     }
 }
 name.addEventListener('keypress', setName);
+name.addEventListener('blur', setName);
 
 
 function getPlan() {
@@ -84,6 +90,7 @@ function getPlan() {
         plan.textContent = '{Enter your focus...}';
     } else {
         plan.textContent = localStorage.getItem('plan');
+
     }
 }
 
@@ -98,7 +105,7 @@ function setPlan(e) {
     }
 }
 plan.addEventListener('keypress', setPlan);
-
+plan.addEventListener('blur', setPlan);
 greetings();
 getName();
 getPlan();

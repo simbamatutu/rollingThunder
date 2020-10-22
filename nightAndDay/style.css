@@ -1,3 +1,4 @@
+ 
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
 * {
@@ -32,6 +33,7 @@ body {
   background-size: cover;
 }
 
+<<<<<<< HEAD
 body .mover {
   position: relative;
   display: flex;
@@ -40,6 +42,15 @@ body .mover {
   text-align: center;
   top: 20%;
 }
+=======
+
+@media (max-width:550px){
+    time {
+        font-size: 3.3rem;
+        padding-bottom: 1rem;
+        font-family: "Orbitron", sans-serif;
+      }
+>>>>>>> 51d40ddbeb777d2a8fba3e2b10f5b800601be037
 
 @media (max-width: 550px) {
   time {
@@ -62,3 +73,4 @@ body .mover {
     font-size: 1.2rem;
   }
 }
+
