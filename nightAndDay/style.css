@@ -33,7 +33,6 @@ body {
   background-size: cover;
 }
 
-<<<<<<< HEAD
 body .mover {
   position: relative;
   display: flex;
@@ -42,7 +41,6 @@ body .mover {
   text-align: center;
   top: 20%;
 }
-=======
 
 @media (max-width:550px){
     time {
@@ -50,7 +48,6 @@ body .mover {
         padding-bottom: 1rem;
         font-family: "Orbitron", sans-serif;
       }
->>>>>>> 51d40ddbeb777d2a8fba3e2b10f5b800601be037
 
 @media (max-width: 550px) {
   time {
