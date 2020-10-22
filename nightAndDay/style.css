@@ -1,5 +1,6 @@
  
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,24 +8,17 @@
 }
 
 time {
-  font-size: 8rem;
+  font-size: 6.5rem;
   padding-bottom: 1rem;
   font-family: "Orbitron", sans-serif;
 }
 
-h1 {
-  padding-bottom: 1 rem;
-  padding-bottom: 2rem;
-}
-
 h2 {
-  padding-bottom: 1.2rem;
- 
+  padding-bottom: 1rem;
 }
 
-#planText{
-    font-size: 2.6rem;
-   
+#planText {
+  font-size: 2.6rem;
 }
 
 body {
@@ -35,7 +29,48 @@ body {
   height: 100vh;
   text-justify: center;
   background-position: center;
-  font-family: "Varela Round", sans-serif;
+  font-family: "ZCOOL XiaoWei", serif;
   background-size: cover;
 }
- 
+
+<<<<<<< HEAD
+body .mover {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
+  top: 20%;
+}
+=======
+
+@media (max-width:550px){
+    time {
+        font-size: 3.3rem;
+        padding-bottom: 1rem;
+        font-family: "Orbitron", sans-serif;
+      }
+>>>>>>> 51d40ddbeb777d2a8fba3e2b10f5b800601be037
+
+@media (max-width: 550px) {
+  time {
+    font-size: 3.3rem;
+    padding-bottom: 1rem;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
+  #planText {
+    margin-top: 3em;
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
