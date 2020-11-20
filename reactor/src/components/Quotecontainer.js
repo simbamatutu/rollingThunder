@@ -1,17 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react'
+import Quote from './Quote';
 
-const containerStyle={
-    backgroundColor: '#fff',
-    width: 50,
-    height:50
+export class Quotecontainer extends Component {
+    render() {
+        return (
+            <div className ='quoteCointainer'>
+            <Quote qoute={this.props.quote[1]} />
+            </div>
+        );
+    }
 }
 
-function Quotecontainer(){
-    return(
-        <div className='quoteCointainer' style={containerStyle}>
-            <p>lorem </p>
-        </div>
-    );
-}
-
-export default Quotecontainer;
+export default Quotecontainer
