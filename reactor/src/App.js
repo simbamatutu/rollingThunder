@@ -20,15 +20,53 @@ export class App extends Component {
             id:3,
             Acquote:"“A text is evolutionary by its very nature.”",
             author :"Reif Larsen, The Selected Works of T.S. Spivet"
+          },
+          {
+            id:4,
+            Acquote:"“Cellaholics are those who interrupt quality time when they are with you, but rather text, call, and email others who are somewhere else. ”",
+            author :"Jayce O'Neal"
+          },
+          {
+            id:5,
+            Acquote:"“A text is evolutionary by its very nature.”",
+            author :"Reif Larsen, The Selected Works of T.S. Spivet"
+          },
+          {
+            id:6,
+            Acquote:"“Separate text from context and all that remains is a con.”",
+            author :"Stewart Stafford"
+          },
+          {
+            id:7,
+            Acquote:"“A text always remains in crucial ways ‘imperceptible’.”",
+            author :"Nicholas Royle, Jacques Derrida"
           }
       ]
+       
     };
 
+    choosen ()  {
+      return Math.floor((Math.random()*6)+1);
+    }
+
+    changeBackground(){
+      var r,g,b;
+      r= Math.floor((Math.random()*256));
+      g= Math.floor((Math.random()*256));
+      b= Math.floor((Math.random()*256));
+      var bgColor = "rgb(" + r + "," + g + "," + b + ")";
+      document.body.style.background = bgColor;
+      document.body.style.color = bgColor;
+      console.log(bgColor);
+    }
+    
+   
   render() {
     return (
-      <div className="App">
+      <div className="App" >
       <header className="App-header">
-        <Quotecontainer quote={this.state.quote} />
+      {this.changeBackground()}
+        <Quotecontainer quote={this.state.quote[ this.choosen() ]} />
       </header>
     </div>
     )
