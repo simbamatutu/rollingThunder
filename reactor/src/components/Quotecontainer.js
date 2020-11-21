@@ -7,7 +7,7 @@ export class Quotecontainer extends Component {
         return (
             <div className ='quoteCointainer' >
             <Quote qoute={this.props.quote} />
-            <Extras />
+            
             </div>
         );
     }

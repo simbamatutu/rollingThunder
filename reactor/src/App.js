@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css';
 import Quotecontainer from './components/Quotecontainer';
 //import Quote from './components/Quote';
+import Extras from './components/Extras'
 
 export class App extends Component {
     state={
@@ -57,6 +58,7 @@ export class App extends Component {
       var bgColor = "rgb(" + r + "," + g + "," + b + ")";
       document.body.style.background = bgColor;
       document.body.style.color = bgColor;
+      
       console.log(bgColor);
     }
     
@@ -64,10 +66,10 @@ export class App extends Component {
   render() {
     return (
       <div className="App" >
-      <header className="App-header">
+      
       {this.changeBackground()}
         <Quotecontainer quote={this.state.quote[ this.choosen() ]} />
-      </header>
+       
     </div>
     )
   }
