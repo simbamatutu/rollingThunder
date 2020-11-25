@@ -15,13 +15,13 @@
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12)
   ;
-  width: 55rem;
-  height: 20rem;
+  width: 30rem;
+  height: 10rem;
   border-radius: 5px 20px 5px;
   position: fixed;
   top: 50%;
   left: 50%;
-  font-size: 1.8rem;
+  font-size: 1rem;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   padding: 0.9em;
