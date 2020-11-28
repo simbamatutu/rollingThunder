@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: aliceblue; 
+}
+
+.container{
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container .textbody h2{
+  text-transform: capitalize;
+  font-size: 4em;
+  margin-bottom: 2.3rem;
+}
+.container .textbody p{
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  font-size: 25px;
+  max-width: 30em;
+}
+
+.notify input{
+  height: 2em;
+  padding: 2px;
+  border: 3px solid salmon;
+  border-radius: 7%;
+
+}
+
+.counters{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  margin: 0 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 80px;  
+  padding: 15px;
+}
+
+.counters span{
+  display: block;
+  margin-top: 10px ;
+}
