@@ -7,6 +7,7 @@
 .container {
   display: grid;
   place-items: center;
+  padding-top: 15vmin;
 }
 
 .textbody {
@@ -98,6 +99,7 @@ h4 {
   position: absolute; 
   bottom: 3vmin;
   right: 50%;
+ 
    
 }
 ul {
@@ -109,7 +111,7 @@ ul li {
   position: relative;
   list-style: none;
   border-radius: 50%;
-  padding: 0.4vmin;
+  padding: 0.5vmin;
   margin: 0 0.5vmin;
 }
 
@@ -153,4 +155,34 @@ ul li:nth-child(4){
   
 ul li:nth-child(5){
   background: #1da1f2;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .container {
+    padding-top: 50vmin;
+     
+    }
+    
+    ul li {
+      position: relative;
+      list-style: none;
+      border-radius: 50%;
+      padding: 1.2vmin;
+      margin: 1vmin;
+      
+       
+    }
+    ul{
+      margin-left: 1vmin;
+      padding: 1vmin;
+    }
+    ul li a {
+      padding-top: 1.4vmin;
+      
+    }
+    
+    .footer{
+      right: 33%;
+    }
+     
   }
