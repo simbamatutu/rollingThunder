@@ -1,12 +1,16 @@
 
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Footer = () => {
   return (
     <div className="footer">
-      <FontAwesomeIcon icon="check-square" />
-      Your <FontAwesomeIcon icon="coffee" /> is hot and ready!
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"> <i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+
+      </ul>
     </div>
   );
 }

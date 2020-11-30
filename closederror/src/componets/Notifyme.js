@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-
-
-
-
-
 const Notifyme = () => {
     return (
         <div className="notify">
