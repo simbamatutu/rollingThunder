@@ -150,9 +150,9 @@ ul li:nth-child(5) {
   background: #1da1f2;
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (min-width: 300px) {
     .container {
-    padding-top: 50vmin;
+    padding-top: 30vmin;
      
     }
     
@@ -175,7 +175,28 @@ ul li:nth-child(5) {
     }
     
     .footer{
-      right: 33%;
+      right: 32%;
+      
     }
      
+
+    .counters {
+      display: inline-block;
+    
+      width: 14vmin;
+      height: 14vmin;
+      border: 2px solid #686de0;
+      margin: 3vmin;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center;
+      justify-content: center;
+    
+      padding: 1.3vmin;
+    }
+    
+    .counters p {
+      font-size: 4vmin;
+      margin-bottom: -10px;
+    }
   }
