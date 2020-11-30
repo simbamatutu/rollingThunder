@@ -1,0 +1,18 @@
+body,html {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: url(./bkg.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ 
