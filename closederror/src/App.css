@@ -30,10 +30,9 @@
   margin-bottom: 30px;
 }
 
- 
 .counters {
   display: inline-block;
-  
+
   width: 8vmin;
   height: 8vmin;
   border: 2px solid #686de0;
@@ -42,16 +41,14 @@
   overflow: hidden;
   text-align: center;
   justify-content: center;
-   
-  padding: 1.2vmin;
 
+  padding: 1.2vmin;
 }
 
-.counters p{
+.counters p {
   font-size: 2vmin;
   margin-bottom: -10px;
 }
-
 
 h4 {
   font-size: 3vmin;
@@ -95,12 +92,10 @@ h4 {
   opacity: 0.7;
 }
 
-.footer{
-  position: absolute; 
+.footer {
+  position: absolute;
   bottom: 3vmin;
-  right: 50%;
- 
-   
+  left: 40%;
 }
 ul {
   position: relative;
@@ -119,70 +114,36 @@ ul li a {
   width: 3vmin;
   position: relative;
   height: 3vmin;
-  
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   text-decoration: none;
-  border-radius: 50%;
+  font-size: 1.2vmax;
   color: #e2e2e2;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.5s;
+  padding: 1vmin;
   box-shadow: 2px;
 }
 
-ul li a:hover{
-   
+ul li a:hover {
   transform: translateY(-2px);
   transition: ease-in-out;
 }
 
-ul li:nth-child(2){
-background: #1877f2;
+ul li:nth-child(2) {
+  background: #1877f2;
 }
 
-
-ul li:nth-child(3){
+ul li:nth-child(3) {
   background: #25d366;
-  }
-  
-  
-ul li:nth-child(4){
-  background: #c32aa3;
-  }
-   
-  
-ul li:nth-child(5){
-  background: #1da1f2;
-  }
+}
 
-  @media only screen and (max-width: 400px) {
-    .container {
-    padding-top: 50vmin;
-     
-    }
-    
-    ul li {
-      position: relative;
-      list-style: none;
-      border-radius: 50%;
-      padding: 1.2vmin;
-      margin: 1vmin;
-      
-       
-    }
-    ul{
-      margin-left: 1vmin;
-      padding: 1vmin;
-    }
-    ul li a {
-      padding-top: 1.4vmin;
-      
-    }
-    
-    .footer{
-      right: 33%;
-    }
-     
-  }
+ul li:nth-child(4) {
+  background: #c32aa3;
+}
+
+ul li:nth-child(5) {
+  background: #1da1f2;
+}

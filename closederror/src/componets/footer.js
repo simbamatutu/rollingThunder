@@ -5,7 +5,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="footer">
-      
+
       <ul>
         <li><p>Follow me:</p></li>
         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
