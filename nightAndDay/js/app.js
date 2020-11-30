@@ -2,7 +2,7 @@ const time = document.getElementById('time'),
     greeting = document.getElementById('greeting'),
     name = document.getElementById('name'),
     plan = document.getElementById('theplan');
-
+var username;
 
 function setTime() {
     let today = new Date(),
@@ -21,14 +21,27 @@ function zeropad(n) {
 
 function greetings() {
     let today = new Date(),
-        hours = today.getHours();
-
-    if (hours < 12) {
-        greeting.textContent = 'Good Morning';
-    } else if (hours < 18) {
-        greeting.textContent = 'Good Afternoon';
-    } else {
-        greeting.textContent = 'Good Evening';
+        //  hours = today.getHours();
+        hours = 4;
+    if ((hours >= 5) && (hours <= 7)) {
+        greeting.textContent = 'Sleep well';
+    } else if ((hours >= 8) && (hours <= 9)) {
+        greeting.textContent = 'Ready to seize the day';
+    } else if (hours == 10) {
+        greeting.textContent = 'Good morning';
+    } else if (hours == 11) {
+        greeting.textContent = 'How is it going';
+    } else if (hours == 12) {
+        greeting.textContent = 'Good day';
+    } else if ((hours >= 13) && (hours <= 17)) {
+        greeting.textContent = 'Seize the day';
+    } else if ((hours >= 18) && (hours <= 20)) {
+        greeting.textContent = 'Good evening';
+    } else if (hours >= 21 && hours <= 4) {
+        greeting.textContent = 'Late night session';
+    }
+    else {
+        greeting.textContent = 'Set The Day On Fire';
     }
     setTimeout(greetings, 1000);
 }
@@ -42,10 +55,6 @@ function setBg() {
         document.body.style.backgroundImage = "url('./img/night2.jpg')";
         document.body.style.color = "white";
 
-<<<<<<< HEAD
-=======
-        document.body.style
->>>>>>> 51d40ddbeb777d2a8fba3e2b10f5b800601be037
     } else if (hours >= 6 && hours <= 11) {
         document.body.style.backgroundImage = "url('./img/sunrise.jpg')";
         document.body.style.color = "white";
@@ -68,6 +77,7 @@ function getName() {
         name.textContent = '{Enter name...}';
     } else {
         name.textContent = localStorage.getItem('name');
+        username = name;
     }
 }
 
