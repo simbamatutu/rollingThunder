@@ -11,37 +11,36 @@ import Footer from './componets/Footer';
     super(props);
    
     this.state={
-      count : new Date ('December 17, 2020 03:24:00').getTime(),
-      now : new Date().getTime(),
-      Deadline : 0,
+     
       days: 0,
       hours:0,
       minutes:0,
       seconds:0
-    };
+    } 
     
   }
+  
+  reload = ()=>{
+    let count = new Date ('March 11, 2021 03:24:00').getTime();
+    let now = new Date().getTime();
+    let Deadline =  count - now;
+    
+    this.setState({    
    
-  componentDidMount() {
+    days: Math.floor(Deadline/(1000*60*60*24)),
+    hours :Math.floor((Deadline%(1000*60*60*24))/(1000*60*60)),
+    minutes : Math.floor((Deadline%(1000*60*60)/(1000*60))),
+    seconds : Math.floor((Deadline%(1000*60))/1000)
+     } );
+      
+  }
+ 
+   componentDidMount() {
     this.timerID = setInterval(
       () => this.reload(), 1000
     );
       
-  }
-
-  
-
-  reload = ()=>{
-    this.setState({    
-    Deadline : this.count - this.now,
-    days: Math.floor(this.Deadline/(1000*60*60*24)),
-    hours :Math.floor((this.Deadline%(1000*60*60*24))/(1000*60*60)),
-    minutes : Math.floor((this.Deadline%(1000*60*60)/(1000*60))),
-    seconds : Math.floor((this.Deadline%(1000*60))/1000)
-     } );
-  }
-  
- 
+  } 
   render() {
    
     return (
@@ -49,7 +48,11 @@ import Footer from './componets/Footer';
        <div className="container">
          <Textbody />
          <Notifyme />
-         <Countdown />
+         <Countdown   days= {this.state.days} 
+                      hours= {this.state.hours} 
+                      minutes= {this.state.minutes} 
+                      seconds= {this.state.seconds} 
+          />
          <Footer />
        </div>
 
