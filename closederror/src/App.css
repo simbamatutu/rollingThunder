@@ -23,7 +23,7 @@
 .container .textbody p {
   text-transform: capitalize;
   letter-spacing: 0.2ch;
-  font-size: calc(15px+ 10ch);
+  font-size: 2ch;
   width: 30vmax;
   text-align: center;
   margin-bottom: 5vh;
