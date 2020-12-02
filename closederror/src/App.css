@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: rgb(62, 185, 79);
+  color: aliceblue;
 }
 
 .container {
@@ -196,9 +196,10 @@ ul li a {
   ul li {
     border-radius: 50%;
     padding: 1.5vw;
-    width: 2vw;
-    height: 2vh;
+    width: 20px;
+    height: 20px;
     display: grid;
+
     place-items: center;
     margin: 0 15px;
   }
@@ -207,7 +208,8 @@ ul li a {
     align-items: center;
     text-decoration: none;
     font-size: 2ch;
-    margin-top: -15px;
+    margin-top: -12px;
+    margin-left: -5px;
 
     color: #e2e2e2;
     border-radius: 50%;
