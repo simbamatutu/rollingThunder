@@ -146,7 +146,7 @@ ul li {
   position: relative;
   list-style: none;
   border-radius: 50%;
-  padding: 0.5vmin;
+  padding: 1.5vmin;
   margin: 0 0.5vmin;
 }
 
@@ -195,19 +195,19 @@ ul li a {
 @media only screen and (min-width: 865px) {
   ul li {
     border-radius: 50%;
-    padding: 1.2vw;
-    width: 4vw;
-    height: 4vh;
+    padding: 1.5vw;
+    width: 2vw;
+    height: 2vh;
     display: grid;
     place-items: center;
-    margin-right: 12px;
+    margin: 0 15px;
   }
 
   ul li a {
     align-items: center;
     text-decoration: none;
     font-size: 2ch;
-    margin-top: -4px;
+    margin-top: -15px;
 
     color: #e2e2e2;
     border-radius: 50%;
