@@ -7,7 +7,7 @@
 .container {
   display: grid;
   place-items: center;
-  padding-top: 15vmin;
+  padding-top: 20vh;
 }
 
 .textbody {
@@ -18,34 +18,72 @@
 
 .container .textbody h2 {
   text-transform: capitalize;
-  font-size: 3vmax;
-  margin-top: 25%;
+  font-size: 4ch;
 }
 .container .textbody p {
   text-transform: capitalize;
-  letter-spacing: 0.2vmin;
-  font-size: 15px;
+  letter-spacing: 0.2ch;
+  font-size: calc(15px+ 10ch);
   width: 30vmax;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5vh;
 }
 
 .counters {
   display: inline-block;
-
-  width: 8vmin;
-  height: 8vmin;
+  width: 8vw;
+  height: 5vh;
   border: 2px solid #686de0;
   margin: 4vmin;
   border-radius: 50%;
   overflow: hidden;
   text-align: center;
   justify-content: center;
-
+  margin-top: 3vh;
   padding: 1.2vmin;
 }
+@media only screen and (min-width: 320px) {
+  .counters {
+    width: 50px;
+    height: 50px;
+    padding: 1.3vmin;
+    margin-top: 2vh;
+  }
+  .counters p {
+    font-size: 1.7ch;
+    margin-top: 3px;
+  }
+  .container .textbody p {
+    text-transform: capitalize;
+    letter-spacing: 0.1ch;
+    font-size: calc(15px+ 10ch);
+    width: 45vmax;
+    text-align: center;
+    margin-bottom: 4vh;
+  }
 
-.counters p {
+  .countdown {
+    margin-top: 2vh;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .counters {
+    width: 56px;
+    height: 56px;
+    padding: 1.2vmin;
+    margin-top: 4vh;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .counters {
+    width: 70px;
+    height: 70px;
+    padding: 1.2vmin;
+    margin-top: 4vh;
+  }
+}
+counters p {
   font-size: 2vmin;
   margin-bottom: -10px;
 }
@@ -93,11 +131,11 @@ h4 {
 }
 
 .footer {
+  width: 100vw;
+  display: grid;
+  place-items: center;
   position: absolute;
-  bottom: 3vmin;
-  right: 50%;
- 
-   
+  bottom: 1.2vh;
 }
 ul {
   position: relative;
@@ -113,20 +151,71 @@ ul li {
 }
 
 ul li a {
-  width: 3vmin;
-  position: relative;
-  height: 3vmin;
-  display: flex;
-  justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 1.2vmax;
+  font-size: 1.2vw;
   color: #e2e2e2;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.5s;
   padding: 1vmin;
   box-shadow: 2px;
+}
+
+@media only screen and (min-width: 280px) {
+  ul li {
+    border-radius: 50%;
+    padding: 2vw;
+    width: 2.3vw;
+    height: 2.2vh;
+    display: grid;
+    place-items: center;
+    margin-right: 10px;
+  }
+
+  ul p {
+    display: none;
+  }
+
+  ul li a {
+    align-items: center;
+    text-decoration: none;
+    font-size: 1ch;
+    margin-top: -5px;
+    margin-left: -3px;
+
+    color: #e2e2e2;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 1vmin;
+    box-shadow: 2px;
+  }
+}
+@media only screen and (min-width: 865px) {
+  ul li {
+    border-radius: 50%;
+    padding: 1.2vw;
+    width: 4vw;
+    height: 4vh;
+    display: grid;
+    place-items: center;
+    margin-right: 12px;
+  }
+
+  ul li a {
+    align-items: center;
+    text-decoration: none;
+    font-size: 2ch;
+    margin-top: -4px;
+
+    color: #e2e2e2;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 1vmin;
+    box-shadow: 2px;
+  }
 }
 
 ul li a:hover {
@@ -148,55 +237,25 @@ ul li:nth-child(4) {
 
 ul li:nth-child(5) {
   background: #1da1f2;
+}
+
+@media only screen and (max-width: 360px) {
+  .counters {
+    display: inline-block;
+    width: 14vmin;
+    height: 14vmin;
+    border: 2px solid #686de0;
+    margin: 3vmin;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+
+    padding: 1.3vmin;
   }
 
-  @media only screen and (min-width: 300px) {
-    .container {
-    padding-top: 30vmin;
-     
-    }
-    
-    ul li {
-      position: relative;
-      list-style: none;
-      border-radius: 50%;
-      padding: 1.2vmin;
-      margin: 1vmin;
-      
-       
-    }
-    ul{
-      margin-left: 1vmin;
-      padding: 1vmin;
-    }
-    ul li a {
-      padding-top: 1.4vmin;
-      
-    }
-    
-    .footer{
-      right: 32%;
-      
-    }
-     
-
-    .counters {
-      display: inline-block;
-    
-      width: 14vmin;
-      height: 14vmin;
-      border: 2px solid #686de0;
-      margin: 3vmin;
-      border-radius: 50%;
-      overflow: hidden;
-      text-align: center;
-      justify-content: center;
-    
-      padding: 1.3vmin;
-    }
-    
-    .counters p {
-      font-size: 4vmin;
-      margin-bottom: -10px;
-    }
+  .counters p {
+    font-size: 4vmin;
+    margin-bottom: -10px;
   }
+}
