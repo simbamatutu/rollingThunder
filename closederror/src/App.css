@@ -56,7 +56,7 @@
   .container .textbody p {
     text-transform: capitalize;
     letter-spacing: 0.1ch;
-    font-size: calc(15px+ 10ch);
+    font-size: 2ch;
     width: 45vmax;
     text-align: center;
     margin-bottom: 4vh;
