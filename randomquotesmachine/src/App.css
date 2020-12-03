@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  display: grid;
+  place-items: center;
+}
+
+.Quotebox {
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+
+  text-align: left;
+  padding: 1ch;
+  height: 20vh;
+
+  width: 80vw;
+
+  color: black;
+  transform: translateY(-50%, -50%);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
