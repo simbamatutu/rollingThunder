@@ -104,7 +104,7 @@ h4 {
   display: inline-block;
   max-width: 45vmin;
   padding: 10px 15px;
-
+  -webkit-appearance: none;
   border: 1px solid #ddd;
   outline: none;
 
