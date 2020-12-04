@@ -15,7 +15,7 @@ export class App extends Component {
         },
         {
           id: 2,
-          qoute: 'Our fight of fury!',
+          qoute: 'Our fight of fury!Where we go one, we all go!',
           author: 'Imortall Joe'
         }
       ]
