@@ -26,7 +26,7 @@ export class Quotebox extends Component {
         
     }
     componentDidMount(){
-        var items=this.props.choosenQoute;
+      /*  var items=this.props.choosenQoute;
         var rando= Math.floor(Math.random()*(items.length));
    
       
@@ -34,7 +34,7 @@ export class Quotebox extends Component {
                 randomText:items[rando].text,
                 randomAuthor:items[rando].author
             })
-            
+            */
        
     }
          
