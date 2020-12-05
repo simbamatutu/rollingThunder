@@ -9,12 +9,13 @@
   background-color: #fff;
   position: absolute;
   top: 50%;
+  right: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
   margin: 0ch 1.3ch 0ch 1.3ch;
-  padding: 1ch 1ch 0ch 1ch;
+  padding: 1ch 1ch 2ch 1ch;
   height: auto;
   width: auto;
   color: black;
@@ -27,12 +28,13 @@
 
 .Quote > #author {
   text-align: right;
-  margin: 1ch;
+  margin: 1ch 0ch 2ch 1ch;
 }
 .Navigate {
   width: 100%;
   height: 6ch;
-  position: relative;
+  bottom: 0px;
+  position: absolute;
 }
 
 .Navigate ul {
@@ -45,7 +47,8 @@
 .Navigate ul li {
   position: relative;
   list-style: none;
-  margin: 0 1ch;
+  margin: 1ch 1ch;
+  padding-bottom: 1ch;
 }
 .Navigate ul li a {
   position: relative;

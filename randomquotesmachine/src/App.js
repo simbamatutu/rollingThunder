@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 import './App.css';
 import Quotebox from './components/Quotebox'
 
@@ -7,23 +8,17 @@ export class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      qoutation: [
-        {
-          id: 1,
-          qoute: 'Where we go one, we all go!',
-          author: 'Donald .J. Trump'
-        },
-        {
-          id: 2,
-          qoute: 'Our fight of fury!Where we go one, we all go!Ourfight of fury!Where we go one, we all go!Ourfight of fury!Where we go one, we all go!Ourfight of fury!Where we go one, we all go!Our fight of fury!Where we go one, we all go!',
-          author: 'Imortall Joe'
-        }
-      ]
+      qoutation: []
     }
-
-
+    
+    
   }
-
+  componentDidMount(){
+    axios.get('https://type.fit/api/quotes')
+          .then(res=>this.setState({
+            qoutation: res.data
+          }));
+  }
 
   render() {
 
