@@ -25,12 +25,9 @@ export class Quotebox extends Component {
         });
 
     }
-    /*componentDidMount() {
-     /*   var items = this.props.choosenQoute;
+    componentDidMount() {
+        var items = this.props.choosenQoute;
         var rando = Math.floor(Math.random() * (items.length));
-        if (items[rando].text == null || items[rando].author == null) {
-            rando = 583;
-        }
 
         this.setState({
             randomText: items[rando].text,
@@ -38,7 +35,7 @@ export class Quotebox extends Component {
         });
 
 
-    }*/
+    }
 
 
 
