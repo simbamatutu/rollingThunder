@@ -6,7 +6,7 @@ export class Quotebox extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            randomText:'He who puts on the shoe knows best where is pitches1',
+            randomText:'He who puts on the shoe knows best where is pitches!',
             randomAuthor:'Ian D. Smith'
         }      
         
