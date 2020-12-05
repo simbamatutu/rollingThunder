@@ -9,7 +9,7 @@
   background-color: #fff;
   position: absolute;
   top: 50%;
-  right: 50%;
+
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: flex;
