@@ -5,8 +5,8 @@ export class Quote extends Component {
     render() {
         return (
             <div className='Quote'>
-                <p>{this.props.qoute}</p>
-                <p>{this.props.author}</p>
+                <p id='text'>{this.props.qoute}</p>
+                <p id='author'> - {this.props.author}</p>
                 <Navigate />
             </div>
         )
