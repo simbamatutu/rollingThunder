@@ -50,9 +50,9 @@
 @media only screen and (min-width: 1424px) {
   .Quotebox {
     position: absolute;
-    font-size: 2em;
-
-    min-width: 100%;
+    font-size: 1.9em;
+    left: 3%;
+    min-width: auto;
   }
 }
 .Navigate {
