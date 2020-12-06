@@ -7,7 +7,7 @@ export class Quotebox extends Component {
         super(props)
         this.state = {
             randomText: 'He who puts on the shoe knows best where is pitches!',
-            randomAuthor: 'Ian D. Smith'
+            randomAuthor: 'Ian D'
         }
 
     }
@@ -33,8 +33,6 @@ export class Quotebox extends Component {
             randomText: items[rando].text,
             randomAuthor: items[rando].author
         });
-
-
     }
 
 
