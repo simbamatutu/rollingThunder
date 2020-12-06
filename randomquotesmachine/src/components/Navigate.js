@@ -17,7 +17,9 @@ export default class Navigate extends Component {
                         </a>
                     </li>
                     <li style={liStyle}>
-                        <a href="#" style={aStyle}>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=#url"
+                            target='_blank'
+                            style={aStyle}>
                             <i className="fa fa-facebook-official" aria-hidden="true" style={{ color: "#3b5998" }}></i>
                         </a>
                     </li>
