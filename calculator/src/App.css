@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+th {
+  text-align: center;
+  align-items: center;
+  text-justify: distribute;
+}
+
+#display {
+  text-align: left;
+  text-justify: left;
+  text-justify: distribute;
+}
+
+tr td input[Type="button"] {
+  outline: none;
+  padding: 3ch;
+  font-weight: 600;
+  font-size: 18px;
+  width: 8ch;
+  height: 8ch;
+}
