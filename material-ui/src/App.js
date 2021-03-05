@@ -8,59 +8,59 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import Checkbox from '@material-ui/icons/CheckBox'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import TextField from '@material-ui/core/TextField';
+import {makeStyles} from '@material-ui/core/styles';
 
+ 
 function CheckBoxExample(){
   const [checked, setChecked]=React.useState(true)
   return(
-  <div>  
-  
-    <Checkbox
-      color='primary'
-      
-      checked={checked}
-      onchange={(e)=> setChecked(e.target.checked)}
-      inputProps={{
-        'aria-label': 'secondary checkbox'
-      }}
-    />
+    <div>  
+  ss 
+      />
   
       
-   </div>
+    </div>
   )
 }
  
+
+
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <TextField
-        color='secondary'
-        variant='filled'
-        type="text" 
-        label="enter"/>
-          <CheckBoxExample />
-            <ButtonGroup variant="contained" color='primary'>
+          color='secondary'
+          variant='filled'
+          type="text" 
+          label="enter" 
+        />
+        <CheckBoxExample />
+        <ButtonGroup variant="contained" color='primary'>
         
         
-        <Button variant="contained"
-         href='#'
-        startIcon={<SaveIcon />}
+          <Button
+            variant="contained"
+            href='#'
+            startIcon={<SaveIcon />}
             size='large'
-           >
+          >
 
              
-          Save
+            Save
           </Button>
 
-        <Button 
-         href='#'
-        startIcon={<DeleteIcon />}
+          <Button 
+            href='#'
+            startIcon={<DeleteIcon />}
             size='large'
-         >
-          Upload
+          >
+            Upload
           </Button>
-          </ButtonGroup>
+        </ButtonGroup>
         <img src={logo} className="App-logo" alt="logo" />
         
       </header>
